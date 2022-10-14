@@ -15,18 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-         hola
-         hola 2.0
-         hola 3.0
-         hola
-         hola 2.0
-         hola 3.0
-         hola
-         hola 2.0
-         hola 3.0
-         hola
-         hola 2.0
-         hola 3.0
+         
         </a>
       </header>
     </div>
