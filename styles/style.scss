@@ -1,0 +1,19 @@
+$blue: blue;
+$red: red;
+
+*{
+margin: 0%; padding: 0%;
+box-sizing: border-box;
+transition: all .2s linear;
+text-transform: capitalize;
+font-family: 'Exo 2',sans-serif;
+}
+html{
+font-size: 62.5%;
+scroll-behavior: smooth;
+}
+
+body
+{background: black; 
+    font-family: 'Courier New', Courier, monospace;
+}
