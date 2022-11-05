@@ -21,8 +21,14 @@ body {
 }
 
 #header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 1.5rem 2.5rem;
     color: #fff;
@@ -73,7 +79,10 @@ body {
                 outline: none;
                 border-radius: 5rem;
 
-                &:hover,
+                &:hover {
+                    width: 25rem;
+                }
+
                 &:focus {
                     width: 25rem;
                 }
@@ -88,8 +97,12 @@ body {
                 z-index: 1;
                 color: #333;
 
-                &:hover~#search {
-                    width: 25rem;
+                &:hover {
+                    ~ {
+                        #search {
+                            width: 25rem;
+                        }
+                    }
                 }
             }
         }
@@ -103,7 +116,8 @@ body {
         width: 100vw;
         background: white(0, 0, 0, 0.9);
         padding: 0;
-      
+        display: none;
+
 
         ul {
             height: 100%;
@@ -152,12 +166,37 @@ body {
 
 
 
-
-
-
-
 #home {
-    min-height: 100vh;
-    width: 100vw;
     background: #333;
-}
+	.slide {
+		min-height: 100vh;
+		width: 100vw;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+		.image {
+			img {
+				width: 50vw;
+			}
+		}
+		.content {
+			h1 {
+				font-size: 4rem;
+				color: #fff;
+			}
+			p {
+				font-size: 1.7rem;
+				color: #ccc;
+			}
+            .stars {
+				margin: 1rem;
+				i {
+					font-size: 1.5rem;
+					padding-right: .4rem;
+					color: gold;
+				}
