@@ -1,91 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description"content="Web site created using create-react-app"/>
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="stylesheet" href="fonts/font-awesome.css">
-    <link rel="stylesheet" href="fonts/google-fonts.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.green.min.css">
-    <title>Books Store</title>
-  </head>
-  <body>
-    <header id="header" class="fixed-top">
-      <div class="fas fa-bars"></div>
-      <a href="#" class="logo"> <i class="fas fa-shopping-bag"> </i>
-          <h1>Shopping Books</h1>
-       </a>
-      <div class="left">
-        <div class="search-container">
-          <label for="search" class="fas fa-search"></label>
-          <input type="search" placeholder="Buscar" id="search">
-        </div>
-        <div class="fas fa-shooping-cart"></div>
-      </div>
-      
-      <!--bar-->
-      <nav class="navbar">
-        <ul>
-          <li><a href="#home">home</a></li>
-          <li><a href="#product">Productos</a></li>
-          <li><a href="#review">review</a></li>
-          <li><a href="#offer">ofertas</a></li>
-          <li><a href="#newsletter">Nuevo</a></li>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Books Store</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Libreria El Pirata</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Principal</a>
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Catalogo
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Manga</a></li>
+              <li><a class="dropdown-item" href="#">Accion</a></li>
+              <li><a class="dropdown-item" href="#">Historia</a></li>
+              <li><a class="dropdown-item" href="#">Ficcion</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Nuevo</a>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Quien somos?</a>
+        </li>
         </ul>
-      </nav>
-
-    </header>
-  
-    <section id="home" class="owl-carousel owl-theme home-slider">
-
-      <div class="slide item">
-      
-        <div class="content text-center text-md-left pl-md-5 ml-md-5">
-          <h1>lIBROS MANGA </h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas unde excepturi saepe sit optio odit recusandae nesciunt doloremque nulla velit?</p>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          <h3 class="price">¢ 18.000/-</h3>
-          <a href="#"><button>AGREGAR AL CARRITO<i class="fas fa-shopping-cart"></i></button></a>
-        </div>
-      
-        <div class="image">
-          <img src="  " alt="" style="transform:rotate(35deg)">
-        </div>
-      
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
       </div>
-      <div class="slide item">
+    </div>
+  </nav>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
 
-        <div class="content text-center text-md-left pl-md-5 ml-md-5">
-          <h1>lIBROSMHISTORICOS</h1>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas unde excepturi saepe sit optio odit recusandae nesciunt doloremque nulla velit?</p>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          <h3 class="Precio"> ¢ 25.000/-</h3>
-          <a href="#"><button>AGREGAR AL CARRITO  <i class="fas fa-shopping-cart"></i></button></a>
-        </div>
-
-     </section>
-  
-     <script src="js/jquery.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
-     <script src="js/main.js"></script>
-
-  </body>
 </html>
