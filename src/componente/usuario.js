@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import '../styles/usuario.css'
 class Usuario extends Component {
     state = {  } 
     render() { 

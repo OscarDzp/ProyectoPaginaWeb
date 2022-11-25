@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import '../styles/articulo.css'
 
 class Articulo extends Component {
     state = {  } 
